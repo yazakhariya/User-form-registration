@@ -61,16 +61,13 @@ function InputsValidation() {
 function SendingData() {
   let obj = {};
   fields.forEach((field) => (obj[field.id] = field.value));
-  console.log(JSON.stringify(obj));
-  fetch("https://localhost:3005/auth", {
+  console.log(obj)
+  fetch("http://localhost:3005/auth", {
+    mode: 'no-cors',
     method: "POST",
-    headers: {
-      "Content-Type": "application/json;charset=utf-8",
-    },
     body: JSON.stringify(obj),
   })
-    .then((response) => response.json())
-    .then(() => alert("Success"));
+    .then((response) => console.log(response));
 }
 
 button.addEventListener("click", (e) => {
