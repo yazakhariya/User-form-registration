@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: var(--text-text-light, #fff);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #17157a;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 84px;
+  margin-bottom: 100px;
+}
+
+label {
+  display: inline-flex;
+  padding: 14px 43px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 18px;
+  background: rgba(66, 62, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  width: 100%;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.checkbox-wrapper {
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  right: 48px;
+  bottom: 10px;
+  align-items: center;
+  background: transparent;
+}
+
+#checkbox {
+  width: 37px;
+  height: 37px;
+  clip-path: circle(58% at 50% 50%);
+  opacity: 0.3;
+  color: var(--MT-blue, #423eff);
+  position: relative;
+}
+
+#checkbox::after {
+  background-color: #423eff;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+}
+
+#checkbox:checked::after {
+  opacity: 0;
+}
+
+#checkbox:checked {
+  opacity: 1;
+  accent-color: #fff;
+}
+
+.color-text {
+  color: #423eff;
+}
+
+button {
+  display: flex;
+  width: 613px;
+  padding: 28px 53px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  background: var(--MT-red, #e30613);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.empty_field {
+ border-bottom: solid 1px red;
+}
+
+.error {
+  color:#e30613;
+}

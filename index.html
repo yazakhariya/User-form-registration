@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>User Form</title>
+  </head>
+  <body>
+    <form id="form">
+      <h1>Регистрация</h1>
+      <label class="name">Имя и Фамилия<input placeholder="Андрей Александровский" id="name" class="field" type="text" /></label>
+      <label class="email">Email<input placeholder="mymail@mail.ru" id="email" class="field" type="text" /></label>
+      <label class="phone"
+        >Номер телефона<input placeholder="+79999999999" id="phone" class="field" type="tel"
+      /></label>
+      <label for="checkbox" class="checkbox-wrapper">
+        <div class="wrapper-checkbox">
+          <input id="checkbox" type="checkbox" />
+        </div>
+        <span
+          >Даю согласие на обработку
+          <span class="color-text">персональных данных</span></span
+        >
+      </label>
+      <button class="button" type="submit">Зарегистрироваться</button>
+    </form>
+  </body> 
+  <script type="module" src="index.js"></script>
+</html>
