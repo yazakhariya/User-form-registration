@@ -1,10 +1,7 @@
-// import { addData } from "./bd.js";
-
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector(".button");
   const email = document.getElementById("email");
   const name = document.getElementById("name");
-  const form = document.getElementById("form");
   const phone = document.getElementById("phone");
   const fields = document.querySelectorAll(".field");
   const nameBox = document.querySelector(".name");
